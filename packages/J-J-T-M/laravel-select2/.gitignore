@@ -1,0 +1,22 @@
+### 3. Arquivo: `.gitignore`
+
+Este arquivo diz ao Git quais arquivos e pastas ignorar ao fazer commits. É crucial para não enviar arquivos desnecessários para o seu repositório.
+
+```
+# Dependências do Composer
+/vendor/
+
+# Arquivo de lock do Composer (bibliotecas não devem commitar o lock)
+composer.lock
+
+# Arquivos de IDEs
+.idea/
+.vscode/
+
+# Arquivos de Sistema Operacional
+.DS_Store
+
+# Arquivos de log e ambiente
+*.log
+.env
+```
