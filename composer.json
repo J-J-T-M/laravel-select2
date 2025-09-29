@@ -1,12 +1,12 @@
 {
-    "name": "J-J-T-M/laravel-select2",
+    "name": "j-j-t-m/laravel-select2",
     "description": "Um componente Select2 dinâmico e reutilizável para Laravel.",
     "keywords": ["laravel", "select2", "component", "ajax"],
     "type": "laravel-package",
     "license": "MIT",
     "authors": [
         {
-            "name": "J-J-T-M",
+            "name": "j-j-t-m",
             "email": "jonatham.junior.18@gmail.com"
         }
     ],
@@ -16,13 +16,13 @@
     },
     "autoload": {
         "psr-4": {
-            "J-J-T-M\\LaravelSelect2\\": "src/"
+            "j-j-t-m\\LaravelSelect2\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "J-J-T-M\\LaravelSelect2\\Providers\\Select2ServiceProvider"
+                "j-j-t-m\\LaravelSelect2\\Providers\\Select2ServiceProvider"
             ]
         }
     },
