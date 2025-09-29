@@ -1,7 +1,7 @@
 # Componente Select2 Dinâmico para Laravel
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/seu-nome/laravel-select2.svg?style=flat-square)](https://packagist.org/packages/seu-nome/laravel-select2)
-[![Total Downloads](https://img.shields.io/packagist/dt/seu-nome/laravel-select2.svg?style=flat-square)](https://packagist.org/packages/seu-nome/laravel-select2)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/J-J-T-M/laravel-select2.svg?style=flat-square)](https://packagist.org/packages/J-J-T-M/laravel-select2)
+[![Total Downloads](https://img.shields.io/packagist/dt/J-J-T-M/laravel-select2.svg?style=flat-square)](https://packagist.org/packages/J-J-T-M/laravel-select2)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 Um componente Blade robusto e reutilizável que integra a biblioteca Select2 com o backend Laravel para criar selects dinâmicos com busca via AJAX, paginação (rolagem infinita) e suporte a selects dependentes (cascata).
@@ -26,7 +26,7 @@ Um componente Blade robusto e reutilizável que integra a biblioteca Select2 com
 **1. Instale o pacote via Composer:**
 
 ```bash
-composer require seu-nome/laravel-select2
+composer require J-J-T-M/laravel-select2
 ```
 
 **2. Publique os arquivos de configuração e assets:**
@@ -34,7 +34,7 @@ composer require seu-nome/laravel-select2
 Este comando irá copiar o arquivo de configuração `lists.php` para a pasta `config/` do seu projeto e o arquivo JavaScript para `public/vendor/laravel-select2/`.
 
 ```bash
-php artisan vendor:publish --provider="SeuNome\LaravelSelect2\Providers\Select2ServiceProvider"
+php artisan vendor:publish --provider="J-J-T-M\LaravelSelect2\Providers\Select2ServiceProvider"
 ```
 
 **3. Inclua os assets no seu layout:**
@@ -76,7 +76,7 @@ return [
 
 ### 1. Preparando o Model
 
-Seu Model precisa implementar a `SeuNome\LaravelSelect2\Interfaces\ListInterface`, que exige um método estático `getList`. Este método conterá a lógica para buscar e filtrar os dados.
+Seu Model precisa implementar a `J-J-T-M\LaravelSelect2\Interfaces\ListInterface`, que exige um método estático `getList`. Este método conterá a lógica para buscar e filtrar os dados.
 
 **Exemplo: `app/Models/City.php`**
 ```php
@@ -87,9 +87,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
-use SeuNome\LaravelSelect2\Interfaces\ListInterface;
-use SeuNome\LaravelSelect2\Resources\ListCollection;
-use SeuNome\LaravelSelect2\Resources\ListResource;
+use J-J-T-M\LaravelSelect2\Interfaces\ListInterface;
+use J-J-T-M\LaravelSelect2\Resources\ListCollection;
+use J-J-T-M\LaravelSelect2\Resources\ListResource;
 
 class City extends Model implements ListInterface
 {
@@ -201,7 +201,7 @@ Este arquivo define os termos legais para o uso do seu código. A licença MIT �
 ```
 MIT License
 
-Copyright (c) 2025 <SEU-NOME-OU-NOME-DA-EMPRESA>
+Copyright (c) 2025 <J-J-T-M-OU-NOME-DA-EMPRESA>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
